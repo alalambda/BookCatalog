@@ -2,12 +2,12 @@
  * Created by Eva on 18.01.2016..
  */
 
-Ext.define('TutorialApp.view.login.Login', {
+Ext.define('BookCatalog.view.Login', {
     extend: 'Ext.window.Window',
     xtype: 'login',
 
     requires: [
-        'TutorialApp.view.login.LoginController',
+        'BookCatalog.controller.LoginController',
         'Ext.form.Panel'
     ],
 
