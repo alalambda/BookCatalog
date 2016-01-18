@@ -24,7 +24,7 @@ Ext.define('BookCatalog.view.AddBookFormView', {
                     xtype: 'textfield',
                     name: 'year',
                     fieldLabel: 'Year',
-                    regex: /^([0-9]{1,20})*$/,// zamenitj
+                    regex: /^[1-9][0-9]{3}$/,
                     regexText: 'Invalid year',
                     allowBlank: false,
                     blankText: 'This field is mandatory'
