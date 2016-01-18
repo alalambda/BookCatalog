@@ -32,7 +32,7 @@ Ext.define('BookCatalog.view.BookGridView', {
             dataIndex: 'year',
             editor: {
                 xtype:'textfield',
-                regex: /^([0-9]{1,20})*$/, // необходимо добавить сюда нужное регулярное выражение
+                regex: /^[1-9][0-9]{3}$/,
                 regexText: 'Invalid year',
                 allowBlank: false,
                 blankText: 'This field is mandatory'
