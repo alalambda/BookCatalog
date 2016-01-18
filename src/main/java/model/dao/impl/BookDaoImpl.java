@@ -45,12 +45,12 @@ public class BookDaoImpl implements BookDao {
                 .getResultList();
     }
 
-    public List<Book> findByBook(String name, int year) {
+    public List<Book> findByBook(String name, String author) {
         //String q = "select b from Book b where b.name =:name and b.year =:year";
         return  //emf.createQuery(q)
-                emf.createQuery("select b from Book b where b.name =:name and b.year =:year")
+                emf.createQuery("select b from Book b where b.name =:name and b.author =:author")
                 .setParameter("name", name)
-                .setParameter("year", year)
+                .setParameter("author", author)
                 .getResultList();
     }
 }

@@ -19,6 +19,6 @@ public interface BookDao {
 
     Collection<Book> getBooks(String search);
 
-    public List<Book> findByBook(String name, int year);
+    public List<Book> findByBook(String name, String author);
 
 }

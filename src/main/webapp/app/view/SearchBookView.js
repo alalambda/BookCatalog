@@ -10,7 +10,7 @@ Ext.define('BookCatalog.view.SearchBookView', {
         {
             xtype: 'textfield',
             name: 'search',
-            fieldLabel: 'Enter books title',
+            fieldLabel: 'Enter title',
             maxLength: 200
         }
     ]

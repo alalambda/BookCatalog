@@ -19,6 +19,9 @@ public class Book implements Serializable {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "author")
+    private String author;
+
     @Column(name = "year")
     private int year;
 
@@ -40,6 +43,10 @@ public class Book implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getAuthor() { return author; }
+
+    public void setAuthor(String author) { this.author = author; }
 
     public int getYear() {
         return year;

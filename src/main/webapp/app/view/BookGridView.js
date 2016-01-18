@@ -26,7 +26,18 @@ Ext.define('BookCatalog.view.BookGridView', {
             }
         },
         {
+            text: 'Author',
             flex: 2,
+            sortable: true,
+            dataIndex: 'Author',
+            editor: {
+                xtype: 'textfield',
+                allowBlank: false,
+                blankText: 'This field is mandatory'
+            }
+        },
+        {
+            flex: 3,
             text: 'Year',
             sortable: true,
             dataIndex: 'year',

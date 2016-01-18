@@ -4,7 +4,7 @@
 
 Ext.define('BookCatalog.model.BookCatalogModel', {
     extend: 'Ext.data.Model',
-    fields: ['name', 'year'],
+    fields: ['name', 'author', 'year'],
     proxy: {
         type: 'rest',
         api: {

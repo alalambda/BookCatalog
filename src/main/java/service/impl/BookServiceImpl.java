@@ -29,7 +29,7 @@ public class BookServiceImpl implements BookService {
     @Override
     @SuppressWarnings("unchecked")
     public Boolean add(Book book) {
-        List<Book> duplicate = bookDao.findByBook(book.getName(), book.getYear());
+        List<Book> duplicate = bookDao.findByBook(book.getName(), book.getAuthor());
         if (duplicate.isEmpty()) {
             bookDao.add(book);
             return true;

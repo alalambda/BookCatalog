@@ -22,6 +22,13 @@ Ext.define('BookCatalog.view.AddBookFormView', {
                 },
                 {
                     xtype: 'textfield',
+                    name: 'author',
+                    fieldLabel: 'Author',
+                    allowBlank: false,
+                    blankText: 'This field is mandatory'
+                },
+                {
+                    xtype: 'textfield',
                     name: 'year',
                     fieldLabel: 'Year',
                     regex: /^[1-9][0-9]{3}$/,

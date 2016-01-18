@@ -20,6 +20,8 @@ Ext.define('BookCatalog.controller.BookCatalogController', {
             ref: 'bookCatalogView'},
         {selector: 'addBookFormView textfield[name=name] ',
             ref: 'addBookFormName'},
+        {selector: 'addBookFormView textfield[name=author]',
+            ref: 'addBookFormAuthor'},
         {selector: 'addBookFormView textfield[name=year]',
             ref: 'addBookFormYear'},
         {selector: 'addBookFormView button[action=save]',
@@ -99,7 +101,7 @@ Ext.define('BookCatalog.controller.BookCatalogController', {
     },
 
     onValidation: function () {
-        if (this.getAddBookFormName().validate() && this.getAddBookFormYear().validate()) {
+        if (this.getAddBookFormName().validate() && this.getAddBookFormAuthor().validate() && this.getAddBookFormYear().validate()) {
             this.getAddBookFormSave().enable();
         } else {
             this.getAddBookFormSave().disable();
