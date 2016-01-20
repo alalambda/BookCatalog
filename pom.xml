@@ -7,6 +7,18 @@
   <version>1.0-SNAPSHOT</version>
   <name>BookCatalog Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <developers>
+    <developer>
+      <id>anna</id>
+      <name>Anna Timoskina</name>
+      <email>annussaa@gmail.com</email>
+    </developer>
+    <developer>
+      <id>eva</id>
+      <name>Eva Zuka</name>
+      <email>eva.zuka@gmail.com</email>
+    </developer>
+  </developers>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.jvm.version>1.7</project.jvm.version>
