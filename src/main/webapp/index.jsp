@@ -19,10 +19,5 @@
     </style>
 </head>
 <body>
-<span style="float: right">
-    <a href="?lang=en">en</a>
-    |
-    <a href="?lang=RU">ru</a>
-</span>
 </body>
 </html>
