@@ -16,25 +16,25 @@ Ext.define('BookCatalog.view.AddBookFormView', {
                 {
                     xtype: 'textfield',
                     name: 'name',
-                    fieldLabel: '<spring:message code="lbl.book_title" text="Book Title"/>',
+                    fieldLabel: 'Book Title',
                     allowBlank: false,
-                    blankText: '<spring:message code="lbl.mandatory" text="This field is mandatory"/>'
+                    blankText: 'This field is mandatory'
                 },
                 {
                     xtype: 'textfield',
                     name: 'author',
                     fieldLabel: 'Author',
                     allowBlank: false,
-                    blankText: '<spring:message code="lbl.mandatory" text="This field is mandatory"/>'
+                    blankText: 'This field is mandatory'
                 },
                 {
                     xtype: 'textfield',
                     name: 'year',
                     fieldLabel: 'Year',
                     regex: /^[1-9][0-9]{3}$/,
-                    regexText: '<spring:message code="lbl.inv_year" text="Invalid year"/>',
+                    regexText: 'Invalid year',
                     allowBlank: false,
-                    blankText: '<spring:message code="lbl.mandatory" text="This field is mandatory"/>'
+                    blankText: 'This field is mandatory'
                 }
             ]
         }
@@ -42,12 +42,12 @@ Ext.define('BookCatalog.view.AddBookFormView', {
 
     buttons: [
         {
-            text: '<spring:message code="lbl.save" text="Save"/>',
+            text: 'Save',
             action: 'save',
             disabled: true
         },
         {
-            text: '<spring:message code="lbl.cancel" text="Cancel"/>',
+            text: 'Cancel',
             handler: function () {
                 this.up('window').close();
             }

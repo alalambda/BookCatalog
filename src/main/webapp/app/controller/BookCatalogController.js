@@ -48,6 +48,9 @@ Ext.define('BookCatalog.controller.BookCatalogController', {
             'addBookFormView  textfield[name=name]': {
                 change: this.onValidation
             },
+            'addBookFormView  textfield[name=author]': {
+                change: this.onValidation
+            },
             'addBookFormView  textfield[name=year]': {
                 change: this.onValidation
             }
@@ -55,14 +58,14 @@ Ext.define('BookCatalog.controller.BookCatalogController', {
     },
 
     onSaveBook: function (button) {
-        //var me = this;
+        var me = this;
         var bookTitle = Ext.create('BookCatalog.model.BookCatalogModel');
         bookTitle.set(this.getAddBookFormView().down('form').getValues());
         bookTitle.save({
             success: function (operation, response) {
                 var objAjax = operation.data;
                 Ext.getStore('BookCatalogStore').add(objAjax);
-                this.getAddBookFormView().close();
+                me.getAddBookFormView().close();
             },
             failure: function (dummy, result) {
                 Ext.MessageBox.show({

@@ -19,7 +19,6 @@
     </style>
 </head>
 <body>
-
 <%--<span style="float: right">--%>
     <%--<a href="?lang=lv">lv</a>--%>
     <%--|--%>
