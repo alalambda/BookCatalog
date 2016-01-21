@@ -19,5 +19,12 @@
     </style>
 </head>
 <body>
+
+<%--<span style="float: right">--%>
+    <%--<a href="?lang=lv">lv</a>--%>
+    <%--|--%>
+    <%--<a href="?lang=ru">ru</a>--%>
+<%--</span>--%>
+<%--<h2><spring:message code="lbl.test"/></h2>--%>
 </body>
 </html>
